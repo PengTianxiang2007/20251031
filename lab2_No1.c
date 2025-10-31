@@ -11,14 +11,13 @@ int main(){
     srand(time(NULL));
     int n,a0;
     scanf("%d %d",&n,&a0);
-    fflush(stdout);
-    int maxgcd;
+    int maxgcd=0;
     for(int cnt=1;cnt<=30;cnt++){
         int i = rand() % n;
         printf("? %d\n",i);
+        fflush(stdout);
         int ai;
         scanf("%d",&ai);
-        fflush(stdout);
         int bi;
         if (ai>a0){
             bi = ai - a0;
