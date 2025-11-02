@@ -44,5 +44,7 @@ int main() {
     }
 
     printf("! %d\n", resultGcd);
+    fflush(stdout);
+    
     return 0;
 }
